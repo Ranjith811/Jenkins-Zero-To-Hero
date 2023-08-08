@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    docker { image 'node:16-alpine' }
+    label 'docker-node'  // Use an agent label that corresponds to your Docker-capable node
   }
   stages {
     stage('Test') {
